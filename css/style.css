@@ -8,6 +8,31 @@
   box-sizing: border-box;
 }
 
+
+
+
+/* ================= ENVIO GRATIS================ */
+
+#header_content{
+  width: 100%;
+  position: absolute;
+  
+}
+
+.first_h{
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+ padding: 1px;
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
 /* ================= VARIABLE ================ */
 :root {
   --primary-color: hsl(9, 94%, 61%);
@@ -215,3 +240,132 @@ header {
     font-size: 1.3rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* -------- CARDS ULTIMO ARREGLO -------------- */
+
+ #grid_f{
+  width: 100%;
+  z-index: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.pro{
+  width: 33%;
+  height: 16em;
+  margin-left: 1em;
+  padding: 10px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+
+}
+#pro1{
+  background-image: url('/img/default0941.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pro2{
+  background-image: url('/img/default0941.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pro3{
+  background-image: url('/img/default0941.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#msg{
+  margin: 50px auto;
+  text-align: center;
+}
+.shop_n{
+  
+  font-weight: bold;
+}
+
+
+
+/* MEDIA QUERY FOT RESPONSIVE WEB PAGE */
+
+
+@media (max-width: 900px) {
+  .pro{
+      width: 28%;
+      height: 12em;   
+  }
+  .content, #flex{
+      overflow-x: scroll;
+      overflow-y: hidden;
+      
+  }
+  .one_bp{
+      width: 22em;
+     }
+     .pro_img{
+      width: 13em;
+     }
+     .pro10{
+      width: 26em;
+   }
+   
+  .overall{
+      margin: 0.1em;
+      margin-left: 10%;
+  }
+
+
+}
+@media (max-width: 700px) {
+  #big_post {
+      flex-direction: column;
+     align-items: center;
+  } 
+  .one_bp{
+      width: 30em;
+  }
+  .box{
+      margin-bottom: 13%;
+  }
+  .first_box {
+      width: 90%;
+      margin-left: 5px;
+  }
+  .pro10{
+      width: 100%;
+  }
+ 
+
+   #grid_f{
+      flex-direction: column;
+      align-items: center;
+   }
+   .pro{
+      width: 95%;
+      margin: 10px;
+      height: 17em;
+   }
+   .copy{
+      width: 40%;
+   }
+   .pay{
+      margin-right: 2%;
+   }
+  }
