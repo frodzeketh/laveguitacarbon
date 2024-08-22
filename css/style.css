@@ -53,7 +53,16 @@ header {
   background-color: var(--dark-color);
   padding: 1rem 2rem;
 }
-
+.company-logo {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav-items {
   display: flex;
 }
@@ -64,8 +73,9 @@ header {
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
   position: relative;
-  color: white;
+ color: white;
 }
+
 .nav-link::before {
   content: "";
   background: linear-gradient(var(--primary-color), var(--primary-color-alt));
@@ -78,6 +88,7 @@ header {
   transform-origin: bottom right;
   transition: transform 150ms;
 }
+
 .nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -98,10 +109,39 @@ header {
   display: none !important;
 }
 
+/* ================= MAIN ================ */
 
+/* -------- HOME SECTION -------------- */
+.section-1 {
+  background-color: var(--dark-color);
+  display: grid;
+  
+}
+/* .home-computer-container {} */
 
+.slogan .company-title {
+  color: white;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.slogan .company-slogan {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
 
+.home-computer {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  
 
+}
 
 
 
@@ -157,5 +197,22 @@ header {
 @media (min-width: 769px) {
   header {
     padding: 1rem 5rem;
+  }
+  /* ================= MAIN ================ */
+
+  /* -------- HOME SECTION -------------- */
+  .section-1 {
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    padding: 10rem 5rem 0 5rem;
+  }
+  .slogan .company-title {
+    max-width: 30rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+  }
+  .slogan .company-slogan {
+    max-width: 20rem;
+    font-size: 1.3rem;
   }
 }
